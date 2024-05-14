@@ -1,0 +1,117 @@
+.footer {
+  background-color: $dark-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footerbox {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: start;
+  }
+}
+.footer__box {
+  &:not(:last-child) {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer__logo--size {
+  margin-bottom: 20px;
+}
+
+.footer__box {
+  @media screen and (min-width: 1200px) {
+    &--size {
+      flex-basis: calc(50% - 15px);
+    }
+  }
+}
+.address-block__list {
+  font-style: normal;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+
+.address-block__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.address-block__link {
+  color: $mail-box-color;
+  transition: $transition-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.address-block__map {
+  color: $primary-white-color;
+  transition: $transition-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer__mail-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: inherit;
+  }
+}
+
+.mail-box__label {
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
+}
+.mail-box__feild {
+  width: 100%;
+  min-width: 290px;
+  padding: 15px 16px;
+  font-size: 16px;
+  color: $mail-box-color;
+  background-color: inherit;
+  border: 1px solid $mail-box-border;
+  filter: drop-shadow($mail-box-shadow);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
+.footer__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  margin-bottom: 20px;
+}

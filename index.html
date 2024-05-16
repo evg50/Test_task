@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-En-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>TravelStudio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -21,7 +21,7 @@
       <div class="container">
         <nav class="page-header__nav">
           <a href="./index.html" class="logo page-header__logo--size list"
-            ><span class="logo__text">Web</span>Studio</a
+            ><span class="logo__text">Travel</span>Studio</a
           >
           <button
             type="button"
@@ -53,16 +53,11 @@
                   <a
                     href="./index.html"
                     class="site-nav__link site-nav__link--current list"
-                    >Студия</a
+                    >Studio</a
                   >
                 </li>
                 <li class="site-nav__item">
-                  <a href="./portfolio.html" class="site-nav__link list"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="site-nav__item">
-                  <a href="#contacts" class="site-nav__link list">Контакты</a>
+                  <a href="#contacts" class="site-nav__link list">Contacts</a>
                 </li>
               </ul>
 
@@ -70,12 +65,12 @@
                 <li class="auth-nav__item">
                   <a
                     href="tel:+380961111111"
-                    aria-label="Телефон"
+                    aria-label="Phone"
                     class="auth-nav__link list"
                   >
                     <svg class="auth-nav__icon auth-nav__icon--tel">
                       <use href="./images/icons.svg#smartphone"></use></svg
-                    >+38 096 111 11 11</a
+                    >+16 131 11 11</a
                   >
                 </li>
 
@@ -87,7 +82,7 @@
                   >
                     <svg class="auth-nav__icon auth-nav__icon--mail">
                       <use href="./images/icons.svg#envelope"></use></svg
-                    >info@devstudio.com
+                    >info@tavelstudio.com
                   </a>
                 </li>
               </ul>
@@ -142,10 +137,10 @@
       <section class="hero hero--overlay">
         <div class="container">
           <div class="hero__center">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="hero__title">Travel consultation for everybody</h1>
           </div>
           <button type="button" class="button" data-modal-open>
-            Заказать услугу
+            make an order
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -161,25 +156,23 @@
               </button>
               <div class="form-box">
                 <form class="form-modal">
-                  <p class="form-modal__title">
-                    Оставьте свои данные, мы вам перезвоним
-                  </p>
+                  <p class="form-modal__title">leave contacts for callback</p>
                   <label class="form-modal__field">
-                    <span class="form-modal__text">Имя</span>
+                    <span class="form-modal__text">Name</span>
                     <input type="text" class="form-modal__input" name="name" />
                     <svg class="form-modal__icon" width="18" height="18">
                       <use href="./images/icons.svg#person-form"></use>
                     </svg>
                   </label>
                   <label class="form-modal__field">
-                    <span class="form-modal__text">Телефон</span>
+                    <span class="form-modal__text">Phone</span>
                     <input type="tel" class="form-modal__input" name="tel" />
                     <svg class="form-modal__icon" width="18" height="18">
                       <use href="./images/icons.svg#phone-form"></use>
                     </svg>
                   </label>
                   <label class="form-modal__field">
-                    <span class="form-modal__text">Почта</span>
+                    <span class="form-modal__text">Email</span>
                     <input
                       type="email"
                       class="form-modal__input"
@@ -191,11 +184,11 @@
                     </svg>
                   </label>
                   <label class="form-modal__field form-modal__field--area">
-                    <span class="form-modal__text">Комментарий</span>
+                    <span class="form-modal__text">Coment</span>
                     <textarea
                       name="user-text"
                       class="form-modal__input form-modal__input--area"
-                      placeholder="Введите текст"
+                      placeholder="input text"
                     ></textarea>
                   </label>
                   <label class="form-modal__checkbox">
@@ -213,19 +206,19 @@
                       <use href="./images/icons.svg#icon-check"></use>
                     </svg>
                     <span class="form-modal__checkbox-text"
-                      >Соглашаюсь с рассылкой и принимаю</span
+                      >agree subscribe</span
                     >
                     <a
                       href=""
-                      aria-label="Условия договора"
+                      aria-label="Terms and rules"
                       class="form-modal__checkbox-text--agreement list"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >Условия договора</a
+                      >Terms and rules</a
                     >
                   </label>
                   <button type="submit" class="button button--send">
-                    Отправить
+                    Send
                   </button>
                 </form>
               </div>
@@ -235,7 +228,7 @@
       </section>
       <section class="section description">
         <div class="container">
-          <h2 class="visually-hidden">Чем мы занимаемся описание</h2>
+          <h2 class="visually-hidden">Describe what we doing</h2>
           <ul class="description__list list">
             <li class="description__item">
               <div class="description__item-box">
@@ -243,11 +236,8 @@
                   <use href="./images/icons.svg#Group"></use>
                 </svg>
               </div>
-              <h3 class="description__title">Внимание к деталям</h3>
-              <p class="description__text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
+              <h3 class="description__title">attention for details</h3>
+              <p class="description__text">Ideas, begin.</p>
             </li>
             <li class="description__item">
               <div class="description__item-box">
@@ -255,11 +245,8 @@
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="description__title">Пунктуальность</h3>
-              <p class="description__text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
+              <h3 class="description__title">punctuality</h3>
+              <p class="description__text">Our mission</p>
             </li>
             <li class="description__item">
               <div class="description__item-box">
@@ -267,11 +254,8 @@
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="description__title">Планирование</h3>
-              <p class="description__text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
+              <h3 class="description__title">planing</h3>
+              <p class="description__text">consultation</p>
             </li>
             <li class="description__item">
               <div class="description__item-box">
@@ -279,10 +263,9 @@
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="description__title">Современные технологии</h3>
+              <h3 class="description__title">Modern route</h3>
               <p class="description__text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                The significance of these problems is obvious
               </p>
             </li>
           </ul>
@@ -290,8 +273,6 @@
       </section>
       <section class="section portfolio">
         <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1>
-
           <ul class="filter-cards list">
             <li class="filter-cards__item">
               <a
@@ -344,14 +325,14 @@
                 </div>
                 <div class="filter-box filter-box--size">
                   <h2 class="filter-box__title">Технокряк</h2>
-                  <p class="filter-box__text">Веб-сайт</p>
+                  <p class="filter-box__text">WebSite</p>
                 </div>
               </a>
             </li>
             <li class="filter-cards__item">
               <a
                 href=""
-                aria-label="Дизайн"
+                aria-label="design"
                 class="filter-cards__link list"
                 target="_blank"
                 rel="noopener noreferrer"

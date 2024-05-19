@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" {IF CLASSES}class="classes"{/IF}>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="noindex" />
@@ -13,11 +13,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body class="page">
-    <header class="page-header page-header--size">
+    <header class="page-header page-header--size sticky-header">
       <div class="container">
         <nav class="page-header__nav">
           <a href="./index.html" class="logo page-header__logo--size list"
@@ -57,6 +57,9 @@
                     class="site-nav__link site-nav__link--current list"
                     >Studio</a
                   >
+                </li>
+                <li class="site-nav__item"><a href="./portfolio.html"
+                    class="site-nav__link list">portfolio</a>
                 </li>
                 <li class="site-nav__item">
                   <a href="#contacts" class="site-nav__link list">Contacts</a>
@@ -123,7 +126,7 @@
                   <a
                     href=""
                     class="menu-list__link list"
-                    aria-label="Линкедин"
+                    aria-label="LinkedIn"
                     target="_blank"
                     rel="noopener noreferrer"
                     >LinkedIn</a
@@ -228,265 +231,27 @@
           </div>
         </div>
       </section>
-      
-      <section class="section portfolio">
-        <div class="container">
-          <ul class="filter-cards list">
-            <li class="filter-cards__item">
-              <a
-                href="https://www.rome.info/attractions/colosseum/"
-                aria-label="colosseum"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-    
-              <img
-                src="https://cdn.pixabay.com/photo/2018/09/14/02/09/colosseum-3676165_1280.jpg"
-                width="450"
-                alt="colosseum"
-              />
+      <section class="section section-jobs">
+            <div class="container">
+                <h2 class="section__title">Чем мы занимаемся</h2>
+                <ul class="section-jobs__list list">
+                    <li class="section-jobs__item section-jobs__item--foto-thumb"><img srcset="./images/box/box1.jpg 1x, ./images/box/box1@2x.jpg 2x"
+                            src="./images/box/box1.jpg" width="370" alt="Сотрудник пишет код.">
+                        <p class="section-jobs__text">Десктопные приложения</p>
+                    </li>
+                    <li class="section-jobs__item section-jobs__item--foto-thumb"><img srcset="./images/box/box2.jpg 1x, ./images/box/box2@2x.jpg 2x"
+                            src="./images/box/box2.jpg" width="370" alt="Сотрудник настраивает стили.">
+                        <p class="section-jobs__text">Мобильные приложения</p>
+                    </li>
+                    <li class="section-jobs__item section-jobs__item--foto-thumb"><img srcset="./images/box/box3.jpg 1x, ./images/box/box3@2x.jpg 2x"
+                            src="./images/box/box3.jpg" width="370" alt="Сотрудник настраивает цветовую палитру.">
+                        <p class="section-jobs__text">Дизайнерские решения</p>
+                    </li>
 
-
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >colosseum</span
-                    >
-                  </p>
-                </div>
-                <div class="filter-box filter-box--size">
-                  <h2 class="filter-box__title">Colosseum</h2>
-                  <p class="filter-box__text">Italy</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href="https://themontblanctrail.com/nl/"
-                aria-label="Mountain"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                  
-                   <img
-                     src="https://cdn.pixabay.com/photo/2020/11/13/16/15/mountains-5739060_640.jpg"
-                     width="450"
-                     alt="photo Mountain in Europe"
-                    />
-                  
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text">
-                      Mountain in Europe</span>
-                    >
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title">
-                    Mountain in Europe
-                  </h2>
-                  <p class="filter-box__text">France , Italy, Switzerland</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href="https://www.savoie-mont-blanc.com/grands-lacs/lac-leman/"
-                aria-label="app"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                 
-                    <img
-                      src="https://cdn.pixabay.com/photo/2023/09/10/12/01/geneva-8244753_640.jpg"
-                      width="450"
-                      alt="Lake"
-                    />
-                  
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >Lake Geneva</span
-                    >
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title">Lake Geneva</h2>
-                  <p class="filter-box__text">Switzerland</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href="https://www.barcelona-tourist-guide.com/ru/albums-ru/gaudi-sagrada-familia/index.html"
-                aria-label="La Sagrada Família"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                  
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/08/31/07/29/la-sagrada-familia-915071_1280.jpg"
-                      width="450"
-                      alt="La Sagrada Família"
-                    />
-                 
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >La Sagrada Família</span
-                    >
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title">La Sagrada Família</h2>
-                  <p class="filter-box__text">Spain</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href=""
-                aria-label="venice"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                 
-                    <img
-                      src="https://cdn.pixabay.com/photo/2018/02/26/14/22/venice-3183168_640.jpg"
-                      width="450"
-                      alt="Photo Venice"
-                    />
-                  
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text">Venice</span>                    
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title">Venice</h2>
-                  <p class="filter-box__text">Italy</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href="https://www.toureiffel.paris/en"
-                aria-label="eiffel-tower"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">                  
-                  <img
-                      src="https://cdn.pixabay.com/photo/2015/10/06/18/26/eiffel-tower-975004_640.jpg"
-                      width="450"
-                      alt="eiffel-tower"
-                    />                  
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >eiffel-tower</span
-                    >
-                  </p>
-                </div>
-                
-                <div class="filter-box">
-                  <h2 class="filter-box__title">Eiffel-tower</h2>
-                  <p class="filter-box__text">France</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href="https://disneyland.disney.go.com/"
-                aria-label="Disnay Land"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                 
-                    <img
-                      src="https://cdn.pixabay.com/photo/2017/08/05/15/05/disney-land-2584304_1280.jpg"
-                      width="450"
-                      alt="Disney Land"
-                    />
-                 
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >Disnay Land</span
-                    >
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title"> Disnay Land </h2>
-                  <p class="filter-box__text">France</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href="https://www.iamsterdam.com/en/see-and-do"
-                aria-label="Amsterdam"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                  
-                    <img
-                      src="https://cdn.pixabay.com/photo/2020/07/24/03/36/houses-5432876_640.jpg"
-                      width="450"
-                      alt="Amsterdam"
-                    />
-                  
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >Amsterdam</span
-                    >
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title">Amsterdam</h2>
-                  <p class="filter-box__text">Nederlands</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href="https://www.visitlondon.com/"
-                aria-label="London"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                 
-                    <img
-                      src="https://cdn.pixabay.com/photo/2018/01/12/11/55/london-3078109_640.jpg"
-                      width="450"
-                      alt="photo working man on the laptop"
-                    />
-                  
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >London</span
-                    >
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title">London</h2>
-                  <p class="filter-box__text">Grean Britain</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+                </ul>
+            </div>
+        </section>
+     
       
     
     </main>
@@ -502,7 +267,7 @@
               <ul class="address-block__list list">
                 <li class="address-block__item">
                   <a
-                    href="https://goo.gl/maps/zxBXprxEHdJfPsus8"
+                    href="https://maps.app.goo.gl/JJS2kfUJbAbbqCNs8"
                     aria-label="google map"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -524,7 +289,7 @@
                     href="tel:+380961111111"
                     aria-label="phjone"
                     class="address-block__link list"
-                    >+38 096 111 11 11</a
+                    >+16  131 11 11</a
                   >
                 </li>
               </ul>
@@ -626,6 +391,6 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
-    <!-- <script> sourceURL=pen.js"></script> -->
+    <!-- <script> src=pen.js"></script> -->
   </body>
 </html>

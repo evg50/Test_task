@@ -1,5 +1,6 @@
 body {
   background-color: #ffffff;
+
   color: #212121;
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -46,6 +47,14 @@ img {
   border: none;
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -638,7 +647,7 @@ body.is-open {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(https://cdn.pixabay.com/photo/2013/02/09/12/14/tulips-79667_640.jpg);
+    url(../images/scompass-8324516_1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -653,7 +662,7 @@ body.is-open {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(https://cdn.pixabay.com/photo/2013/02/09/12/14/tulips-79667_640.jpg);
+      url(../images/scompass-8324516_1920.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -664,7 +673,7 @@ body.is-open {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(https://cdn.pixabay.com/photo/2013/02/09/12/14/tulips-79667_640.jpg);
+      url(../images/hero/compass-8324516_1920.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-width: 768px) {
@@ -674,7 +683,7 @@ body.is-open {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(https://cdn.pixabay.com/photo/2013/02/09/12/14/tulips-79667_640.jpg);
+      url(../images/hero/compass-8324516_1920.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -686,7 +695,7 @@ body.is-open {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(https://cdn.pixabay.com/photo/2013/02/09/12/14/tulips-79667_640.jpg);
+      url(../images/hero/compass-8324516_1920.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
@@ -696,7 +705,7 @@ body.is-open {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(https://cdn.pixabay.com/photo/2013/02/09/12/14/tulips-79667_640.jpg);
+      url(../images/hero/compass-8324516_1920.jpg);
   }
 }
 

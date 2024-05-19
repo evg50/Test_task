@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    
+    <meta name="robots" content="noindex" />
+    <title>TravelStudio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -13,15 +13,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body class="page">
-    <header class="page-header page-header--border page-header--correction">
+    <header class="page-header page-header--size sticky-header">
       <div class="container">
         <nav class="page-header__nav">
           <a href="./index.html" class="logo page-header__logo--size list"
-            ><span class="logo__text">Web</span>Studio</a
+            ><span class="logo__text">Travel</span>Studio</a
           >
           <button
             type="button"
@@ -30,7 +30,9 @@
             data-menu-open
           >
             <svg class="button-menu__icon-open" width="24" height="16">
+              
               <use href="./images/icons.svg#menu_24px"></use>
+            <!-- </svg> -->
             </svg>
           </button>
           <div class="menu-container is-close" data-menu>
@@ -50,17 +52,18 @@
               </button>
               <ul class="site-nav list">
                 <li class="site-nav__item">
-                  <a href="./index.html" class="site-nav__link list">Студия</a>
-                </li>
-                <li class="site-nav__item">
                   <a
-                    href="./portfolio.html"
-                    class="site-nav__link site-nav__link--current list"
-                    >Портфолио</a
+                    href="./index.html"
+                    class="site-nav__link list"
+                    >Studio</a
                   >
                 </li>
+                <li class="site-nav__item"><a href="./portfolio.html"
+                    class="site-nav__link site-nav__link--current list"
+                    >Portfolio</a>
+                </li>
                 <li class="site-nav__item">
-                  <a href="#contacts" class="site-nav__link list">Контакты</a>
+                  <a href="#contacts" class="site-nav__link list">Contacts</a>
                 </li>
               </ul>
 
@@ -68,12 +71,12 @@
                 <li class="auth-nav__item">
                   <a
                     href="tel:+380961111111"
-                    aria-label="Телефон"
+                    aria-label="Phone"
                     class="auth-nav__link list"
                   >
                     <svg class="auth-nav__icon auth-nav__icon--tel">
                       <use href="./images/icons.svg#smartphone"></use></svg
-                    >+38 096 111 11 11</a
+                    >+16 131 11 11</a
                   >
                 </li>
 
@@ -85,7 +88,7 @@
                   >
                     <svg class="auth-nav__icon auth-nav__icon--mail">
                       <use href="./images/icons.svg#envelope"></use></svg
-                    >info@devstudio.com
+                    >info@tavelstudio.com
                   </a>
                 </li>
               </ul>
@@ -136,506 +139,262 @@
         </nav>
       </div>
     </header>
+    //extra header
+    
     <main>
+      
       <section class="section portfolio">
         <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1>
-
           <ul class="filter-cards list">
             <li class="filter-cards__item">
               <a
-                href=""
-                aria-label="Веб-сайт"
+                href="https://www.rome.info/attractions/colosseum/"
+                aria-label="colosseum"
                 class="filter-cards__link list"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink1desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink1desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink1tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink1tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink1mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink1mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/mobile/portfoliolink1mobile.jpg"
-                      width="450"
-                      alt="На фото ноутбук"
-                    />
-                  </picture>
+    
+              <img
+                src="https://cdn.pixabay.com/photo/2018/09/14/02/09/colosseum-3676165_1280.jpg"
+                width="450"
+                alt="colosseum"
+              />
+
+
                   <p class="animation-box__thumb">
                     <span class="animation-box__text"
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
+                      >colosseum</span
                     >
                   </p>
                 </div>
                 <div class="filter-box filter-box--size">
-                  <h2 class="filter-box__title">Технокряк</h2>
-                  <p class="filter-box__text">Веб-сайт</p>
+                  <h2 class="filter-box__title">Colosseum</h2>
+                  <p class="filter-box__text">Italy</p>
                 </div>
               </a>
             </li>
             <li class="filter-cards__item">
               <a
-                href=""
-                aria-label="Дизайн"
+                href="https://themontblanctrail.com/nl/"
+                aria-label="Mountain"
                 class="filter-cards__link list"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink2desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink2desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
+                  
+                   <img
+                     src="https://cdn.pixabay.com/photo/2020/11/13/16/15/mountains-5739060_640.jpg"
+                     width="450"
+                     alt="photo Mountain in Europe"
                     />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink2tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink2tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink2mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink2mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/mobile/portfoliolink2mobile.jpg"
-                      width="450"
-                      alt="На фото баскетболисты"
-                    />
-                  </picture>
+                  
                   <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Magnam beatae, provident similique ab eum id sint
-                      recusandae temporibus! Eveniet nam nobis temporibus quidem
-                      harum perspiciatis, praesentium tenetur veniam!</span
+                    <span class="animation-box__text">
+                      Mountain in Europe</span>
                     >
                   </p>
                 </div>
                 <div class="filter-box">
                   <h2 class="filter-box__title">
-                    Постер New Orlean vs Golden Star
+                    Mountain in Europe
                   </h2>
-                  <p class="filter-box__text">Дизайн</p>
+                  <p class="filter-box__text">France , Italy, Switzerland</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-cards__item">
+              <a
+                href="https://www.savoie-mont-blanc.com/grands-lacs/lac-leman/"
+                aria-label="app"
+                class="filter-cards__link list"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="animation-box">
+                 
+                    <img
+                      src="https://cdn.pixabay.com/photo/2023/09/10/12/01/geneva-8244753_640.jpg"
+                      width="450"
+                      alt="Lake"
+                    />
+                  
+                  <p class="animation-box__thumb">
+                    <span class="animation-box__text"
+                      >Lake Geneva</span
+                    >
+                  </p>
+                </div>
+                <div class="filter-box">
+                  <h2 class="filter-box__title">Lake Geneva</h2>
+                  <p class="filter-box__text">Switzerland</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-cards__item">
+              <a
+                href="https://www.barcelona-tourist-guide.com/ru/albums-ru/gaudi-sagrada-familia/index.html"
+                aria-label="La Sagrada Família"
+                class="filter-cards__link list"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="animation-box">
+                  
+                    <img
+                      src="https://cdn.pixabay.com/photo/2015/08/31/07/29/la-sagrada-familia-915071_1280.jpg"
+                      width="450"
+                      alt="La Sagrada Família"
+                    />
+                 
+                  <p class="animation-box__thumb">
+                    <span class="animation-box__text"
+                      >La Sagrada Família</span
+                    >
+                  </p>
+                </div>
+                <div class="filter-box">
+                  <h2 class="filter-box__title">La Sagrada Família</h2>
+                  <p class="filter-box__text">Spain</p>
                 </div>
               </a>
             </li>
             <li class="filter-cards__item">
               <a
                 href=""
-                aria-label="Приложения"
+                aria-label="venice"
                 class="filter-cards__link list"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink3desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink3desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink3tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink3tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink3mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink3mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                 
                     <img
-                      src="./images/portfolio/mobile/portfoliolink3mobile.jpg"
+                      src="https://cdn.pixabay.com/photo/2018/02/26/14/22/venice-3183168_640.jpg"
                       width="450"
-                      alt="На фото логотип ресторана"
+                      alt="Photo Venice"
                     />
-                  </picture>
+                  
                   <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Incidunt quae ex repellendus ab autem inventore amet
-                      molestiae excepturi, obcaecati, vel quidem necessitatibus
-                      tenetur optio reprehenderit pariatur?</span
-                    >
+                    <span class="animation-box__text">Venice</span>                    
                   </p>
                 </div>
                 <div class="filter-box">
-                  <h2 class="filter-box__title">Ресторан Seafood</h2>
-                  <p class="filter-box__text">Приложения</p>
+                  <h2 class="filter-box__title">Venice</h2>
+                  <p class="filter-box__text">Italy</p>
                 </div>
               </a>
             </li>
             <li class="filter-cards__item">
               <a
-                href=""
-                aria-label="Маркетинг"
+                href="https://www.toureiffel.paris/en"
+                aria-label="eiffel-tower"
                 class="filter-cards__link list"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink4desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink4desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink4tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink4tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink4mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink4mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/mobile/portfoliolink4mobile.jpg"
+                <div class="animation-box">                  
+                  <img
+                      src="https://cdn.pixabay.com/photo/2015/10/06/18/26/eiffel-tower-975004_640.jpg"
                       width="450"
-                      alt="На фото наушники"
-                    />
-                  </picture>
+                      alt="eiffel-tower"
+                    />                  
                   <p class="animation-box__thumb">
                     <span class="animation-box__text"
-                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Reprehenderit, blanditiis. Et sequi sed adipisci sit,
-                      eaque architecto consequatur aliquam odio tempora velit
-                      illo maiores asperiores, voluptatem.</span
+                      >eiffel-tower</span
                     >
                   </p>
                 </div>
+                
                 <div class="filter-box">
-                  <h2 class="filter-box__title">Проект Prime</h2>
-                  <p class="filter-box__text">Маркетинг</p>
+                  <h2 class="filter-box__title">Eiffel-tower</h2>
+                  <p class="filter-box__text">France</p>
                 </div>
               </a>
             </li>
             <li class="filter-cards__item">
               <a
-                href=""
-                aria-label="Приложения"
+                href="https://disneyland.disney.go.com/"
+                aria-label="Disnay Land"
                 class="filter-cards__link list"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink5desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink5desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink5tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink5tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink5mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink5mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                 
                     <img
-                      src="./images/portfolio/mobile/portfoliolink5mobile.jpg"
+                      src="https://cdn.pixabay.com/photo/2017/08/05/15/05/disney-land-2584304_1280.jpg"
                       width="450"
-                      alt="На фото коробки"
+                      alt="Disney Land"
                     />
-                  </picture>
+                 
                   <p class="animation-box__thumb">
                     <span class="animation-box__text"
-                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Aperiam, dolorem? Dolore iste, provident modi consequuntur
-                      ipsum optio repudiandae harum placeat inventore fugit
-                      officiis! quibusdam!</span
+                      >Disnay Land</span
                     >
                   </p>
                 </div>
                 <div class="filter-box">
-                  <h2 class="filter-box__title">Проект Boxes</h2>
-                  <p class="filter-box__text">Приложения</p>
+                  <h2 class="filter-box__title"> Disnay Land </h2>
+                  <p class="filter-box__text">France</p>
                 </div>
               </a>
             </li>
             <li class="filter-cards__item">
               <a
-                href=""
-                aria-label="Веб-сайт"
+                href="https://www.iamsterdam.com/en/see-and-do"
+                aria-label="Amsterdam"
                 class="filter-cards__link list"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink6desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink6desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink6tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink6tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink6mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink6mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                  
                     <img
-                      src="./images/portfolio/mobile/portfoliolink6mobile.jpg"
+                      src="https://cdn.pixabay.com/photo/2020/07/24/03/36/houses-5432876_640.jpg"
                       width="450"
-                      alt="На фото монитор"
+                      alt="Amsterdam"
                     />
-                  </picture>
+                  
                   <p class="animation-box__thumb">
                     <span class="animation-box__text"
-                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cumque nisi iure voluptate perferendis ipsam autem
-                      placeat, libero quam dignissimos pariatur cupiditate
-                      temporibus saepe eaque?</span
+                      >Amsterdam</span
                     >
                   </p>
                 </div>
                 <div class="filter-box">
-                  <h2 class="filter-box__title">Inspiration has no Borders</h2>
-                  <p class="filter-box__text">Веб-сайт</p>
+                  <h2 class="filter-box__title">Amsterdam</h2>
+                  <p class="filter-box__text">Nederlands</p>
                 </div>
               </a>
             </li>
             <li class="filter-cards__item">
               <a
-                href=""
-                aria-label="Дизайн"
+                href="https://www.visitlondon.com/"
+                aria-label="London"
                 class="filter-cards__link list"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink7desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink7desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink7tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink7tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink7mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink7mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                 
                     <img
-                      src="./images/portfolio/mobile/portfoliolink7mobile.jpg"
+                      src="https://cdn.pixabay.com/photo/2018/01/12/11/55/london-3078109_640.jpg"
                       width="450"
-                      alt="На фото книга"
+                      alt="photo working man on the laptop"
                     />
-                  </picture>
+                  
                   <p class="animation-box__thumb">
                     <span class="animation-box__text"
-                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Praesentium atque, provident illo molestias id
-                      voluptatibus vel debitis aperiam nobis? Aspernatur, iste
-                      quibusdam sed accusamus omnis!</span
+                      >London</span
                     >
                   </p>
                 </div>
                 <div class="filter-box">
-                  <h2 class="filter-box__title">Издание Limited Edition</h2>
-                  <p class="filter-box__text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href=""
-                aria-label="Маркетинг"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink8desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink8desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink8tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink8tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink8mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink8mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/mobile/portfoliolink8mobile.jpg"
-                      width="450"
-                      alt="На фото ярлык с логотипом"
-                    />
-                  </picture>
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Ipsum quidem totam nulla obcaecati quasi ex, porro et
-                      repudiandae voluptatum, dicta, enim eum rem. Explicabo,
-                      distinctio quia .</span
-                    >
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title">Проект LAB</h2>
-                  <p class="filter-box__text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="filter-cards__item">
-              <a
-                href=""
-                aria-label="Приложения"
-                class="filter-cards__link list"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="animation-box">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/desktop/portfoliolink9desktop.jpg    1x,
-                        ./images/portfolio/desktop/portfoliolink9desktop@2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/portfoliolink9tablet.jpg    1x,
-                        ./images/portfolio/tablet/portfoliolink9tablet@2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/mobile/portfoliolink9mobile.jpg    1x,
-                        ./images/portfolio/mobile/portfoliolink9mobile@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/portfolio/mobile/portfoliolink9mobile.jpg"
-                      width="450"
-                      alt="На фото человек работает на ноутбуке"
-                    />
-                  </picture>
-                  <p class="animation-box__thumb">
-                    <span class="animation-box__text"
-                      >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Consectetur, ratione cum quisquam harum aperiam qui omnis
-                      quasi sapiente eius quod consequuntur? Neque consequuntur
-                      facilis voluptatem laborum !</span
-                    >
-                  </p>
-                </div>
-                <div class="filter-box">
-                  <h2 class="filter-box__title">Growing Business</h2>
-                  <p class="filter-box__text">Приложения</p>
+                  <h2 class="filter-box__title">London</h2>
+                  <p class="filter-box__text">Grean Britain</p>
                 </div>
               </a>
             </li>
@@ -643,54 +402,54 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+     <footer class="footer">
       <div class="container">
         <div class="footerbox">
           <div class="footer__box">
             <a href="./index.html" class="logo footer__logo--size"
-              ><span class="logo__text">Web</span
+              ><span class="logo__text">Travel</span
               ><span class="logo__text--change">Studio</span></a
             >
             <address id="contacts">
               <ul class="address-block__list list">
                 <li class="address-block__item">
                   <a
-                    href="https://goo.gl/maps/zxBXprxEHdJfPsus8"
-                    aria-label="Гугл карта"
+                    href="https://maps.app.goo.gl/JJS2kfUJbAbbqCNs8"
+                    aria-label="google map"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="address-block__map list"
                   >
-                    г. Киев, пр-т Леси Украинки, 26</a
+                    Amsterdam</a
                   >
                 </li>
                 <li class="address-block__item">
                   <a
                     href="mailto:info@devstudio.com"
-                    aria-label="Почта"
+                    aria-label="mail"
                     class="address-block__link list"
-                    >info@devstudio.com</a
+                    >info@travelstudio.com</a
                   >
                 </li>
                 <li class="address-block__item">
                   <a
                     href="tel:+380961111111"
-                    aria-label="Телефон"
+                    aria-label="phjone"
                     class="address-block__link list"
-                    >+38 096 111 11 11</a
+                    >+16  131 11 11</a
                   >
                 </li>
               </ul>
             </address>
           </div>
           <div class="footer__box">
-            <p class="footer__subtitle">присоединяйтесь</p>
+            <p class="footer__subtitle">join us</p>
             <ul class="social-network list">
               <li class="social-network__item">
                 <a
                   href=""
                   class="social-network__link social-network__link--change"
-                  aria-label="Инстаграмм"
+                  aria-label="Instagram"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -707,7 +466,7 @@
                 <a
                   href=""
                   class="social-network__link social-network__link--change"
-                  aria-label="Твиттер"
+                  aria-label="Twitter
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -724,7 +483,7 @@
                 <a
                   href=""
                   class="social-network__link social-network__link--change"
-                  aria-label="Фейсбук"
+                  aria-label="Facebook"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -741,7 +500,7 @@
                 <a
                   href=""
                   class="social-network__link social-network__link--change"
-                  aria-label="Линкедин"
+                  aria-label="LinkedIn"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -757,7 +516,7 @@
             </ul>
           </div>
           <div class="footer__box--size">
-            <p class="footer__subtitle">Подпишитесь на рассылку</p>
+            <p class="footer__subtitle">Subscribe email</p>
             <form class="footer__mail-box">
               <label class="mail-box__label"
                 ><input
@@ -767,7 +526,7 @@
                   placeholder="Email"
               /></label>
               <button type="submit" class="button subscribe--button">
-                Подписаться
+                subscribe
                 <svg class="subscribe__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon_send"></use>
                 </svg>
@@ -776,7 +535,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer
     <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -791,7 +791,21 @@ body.modal-open {
     width: 448px;
   }
 }
-
+.scrollToTopBtn {
+  display: none;
+  position: fixed; /* Фиксированное положение
+  bottom: 250px; /* Отступ снизу */
+  right: 20px; /* Отступ справа */
+  z-index: 99; /* Поверх всех элементов */
+  border: none; /* Без границы */
+  outline: none; /* Без контура */
+  background-color: #000; /* Черный фон */
+  color: white; /* Белый текст */
+  cursor: pointer; /* Курсор в виде руки */
+  padding: 15px; /* Поля внутри кнопки */
+  border-radius: 10px; /* Скругленные углы */
+  font-size: 18px; /* Размер текста */
+}
 .form-modal__title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -919,7 +933,47 @@ body.modal-open {
     line-height: 1.71;
   }
 }
-
+.section-jobs {
+  display: none;
+  padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .section-jobs {
+    display: block;
+    padding-bottom: 94px;
+  }
+  .section-jobs .section-jobs__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: calc(-1 * 30px);
+  }
+  .section-jobs .section-jobs__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+  .section-jobs .section-jobs__item--foto-thumb {
+    display: inline-block;
+    position: relative;
+  }
+  .section-jobs .section-jobs__text {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    min-height: 70px;
+    bottom: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
 .footer {
   background-color: #2f303a;
   padding-top: 60px;

@@ -630,12 +630,12 @@ body.is-open {
   padding-top: 118px;
   padding-bottom: 118px;
 }
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
   }
-} */
+}
 
 .hero--overlay {
   height: 400px;
@@ -647,7 +647,7 @@ body.is-open {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/scompass-8324516_1920.jpg);
+    url(../images/hero/compass-8324516_1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -662,7 +662,7 @@ body.is-open {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/scompass-8324516_1920.jpg);
+      url(../images/hero/compass-8324516_1920.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -793,18 +793,18 @@ body.modal-open {
 }
 .scrollToTopBtn {
   display: none;
-  position: fixed; /* Фиксированное положение
-  bottom: 250px; /* Отступ снизу */
-  right: 20px; /* Отступ справа */
-  z-index: 99; /* Поверх всех элементов */
-  border: none; /* Без границы */
-  outline: none; /* Без контура */
-  background-color: #000; /* Черный фон */
-  color: white; /* Белый текст */
-  cursor: pointer; /* Курсор в виде руки */
-  padding: 15px; /* Поля внутри кнопки */
-  border-radius: 10px; /* Скругленные углы */
-  font-size: 18px; /* Размер текста */
+  position: fixed;
+  bottom: 250px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
 }
 .form-modal__title {
   margin-bottom: 12px;

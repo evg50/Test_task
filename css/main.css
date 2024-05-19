@@ -138,9 +138,29 @@ img {
 .logo__text--change {
   color: #ffffff;
 }
+.menu-container {
+  display: none;
+}
 
+.menu-container.is-open {
+  display: block;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
 .button {
   display: inline-flex;
+  justify-content: center;
   padding: 10px 32px;
   min-width: 200px;
   color: #ffffff;
@@ -934,18 +954,15 @@ body.modal-open {
   }
 }
 
-.section-jobs {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.section-jobs__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
 }
-@media screen and (min-width: 768px) {
-  .section-jobs .section-jobs__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * 30px);
-    margin-bottom: -30px;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   .section-jobs .section-jobs__list {
     margin-left: calc(-1 * 30px);
@@ -957,6 +974,16 @@ body.modal-open {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+@media screen and (min-width: 768px) {
+  .section-jobs .section-jobs__list {
+    align-content: unset;
+    flex-direction: unset;
+    margin-left: calc(-1 * 30px);
+    margin-bottom: -30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .section-jobs__item:not(:last-child) {
     margin-bottom: 30px;

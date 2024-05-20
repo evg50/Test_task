@@ -138,13 +138,6 @@ img {
 .logo__text--change {
   color: #ffffff;
 }
-.menu-container {
-  display: none;
-}
-
-.menu-container.is-open {
-  display: block;
-}
 
 .sticky-header {
   position: fixed;
